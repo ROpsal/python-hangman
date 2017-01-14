@@ -18,6 +18,6 @@ To run a graphical version of Hangman, invoke the following command:
 ![window view](https://github.com/ROpsal/python-hangman/blob/master/images/window.png)
 
 ----------
-## Acknowlegement ##
+## Acknowledgment ##
 
 The graphical version of Hangman utilizes the ```graphics.py``` library by John Zelle.  This file and its documentation are available at Zelle's [Python Programming: An Introduction to Computer Science](http://mcsp.wartburg.edu/zelle/python/ "http://mcsp.wartburg.edu/zelle/python/") web page.
