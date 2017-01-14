@@ -1,0 +1,47 @@
+Variables
+---------
+
+wordlist    ->  List of words loaded from file dictionaryWords.txt.
+
+letterlist  ->  A word from wordlist, split into individual letters.
+            ->  ['O', 'P', 'P', 'O', 'R', 'T', 'U', 'N', 'I', 'T', 'Y']
+            
+hanglist    ->  A list of underscores acting as placeholders for the hangman
+                letters.
+                ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_']
+
+alphalist   ->  List of valid letters to test against.
+                ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+                 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+
+
+Functions / Routines
+--------------------
+
+wordList    ->  Creates the wordlist from file dictionaryWords.txt.
+
+randWord    ->  Pick a random word from the wordList
+
+wordSplit   ->  Split the word into a list of individual letters.
+
+letterMatch(letter, alphalist, letterlist, hanglist)
+
+            ->  Primary matching function.
+                Is the letter valid, i.e., is it in the alphalist?
+                Is the letter a hangman letter, i.e., is it in the letterlist?
+                
+                If the letter is valid and in the letterlist, then update the
+                hanglist.
+                
+                Return None if an invalid letter choice.
+                Return True if a match as was found, otherwise return False.
+
+alphaList   ->  Generate the list of A..Z letters.
+
+joinLetterList(hanglist)
+
+            ->  Join the letter from either the hanglist or letterlist into
+                a string.  Place a space inbetween each underscore and letter.
+                
+                _ _ _ _ _ _ _ _ _ _ _
